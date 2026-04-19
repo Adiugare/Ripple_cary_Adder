@@ -1,9 +1,6 @@
+`timescale 1ns / 1ps
 
-module half_adder(
-    input a, b,
-    output sum,carry
-    );
-    
-    xor HA1(sum,a,b));
-    and HA2(carry,a,b);
+module half_adder(input a,b,output sum,carry);
+xor(sum,a,b);
+and(carry,a,b);
 endmodule
